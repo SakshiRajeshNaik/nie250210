@@ -12,80 +12,59 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="flight_list.html">Airline Reservation system</a>
+          <a class="navbar-brand" href="flight_list.html">Airline Reservation System</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="flight_list.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="flight_list.html">Flight</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="flight_create.html">Add flight</a>
+                <a class="nav-link" href="flight_create.html">Add Flight</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              
             </ul>
             
           </div>
         </div>
       </nav>
-    <h3> List of Flights</h3>
-    <div class="container">
+    <h3>List of Flights</h3>
+    <div class="container"><!--to make page reponsive-->
         <table class="table table-primary table-striped">
             <thead class="table-dark">
                 <tr>
                     <th scope="col">Flight Number</th>
-                    <th scope="col">Airline name</th>
-                    <th scope="col">source</th>
-                    <th scope="col">destination</th>
+                    <th scope="col">Airline Name</th>
+                    <th scope="col">Source</th>
+                    <th scope="col">Destination</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">AI 845</th>
-                    <td>AIR INDIA</td>
+                    <!-- <td class="table-warning text-primary">Air India</td> -->
+                    <td>Air India</td>
                     <td>Mumbai</td>
                     <td>Abu dhabi</td>
                     <td><a href="flight_edit.html?id=1023459870" class="btn btn-warning">Edit</a>
-                    <button class="btn btn-danger">Delete</button>
-                </td>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">6E 151</th>
                     <td>Indigo</td>
                     <td>Hyderabad</td>
-                    <td>Bengaluru</td>
+                    <td>Bangaluru</td>
                     <td><a href="flight_edit.html?id=202111222" class="btn btn-warning">Edit</a>
                         <button class="btn btn-danger">Delete</button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">7A 161</th>
-                    <td>vistara</td>
-                    <td>New Delhi</td>
-                    <td>Nepal</td>
-                    <td><a href="flight_edit.html?id=302111333" class="btn btn-warning">Edit</a>
-                        <button class="btn btn-danger">Delete</button>
-                </tr>
             </tbody>
         </table>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>

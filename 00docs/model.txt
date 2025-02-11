@@ -20,3 +20,28 @@ what is html?
 
 what is CSS?
     style language to make webpage look and feel
+
+where react app is developed?
+    server side js -- node.js
+where react app is used?
+    client side(browser)
+        translation of server side js code base into client side code base
+
+
+react is a package or library useed for frontend Application framework , it is node based
+
+client will have UI
+
+full stcak
+    (client)(Application/business) [data]
+    ------------------------------------------
+            server 
+
+    react       golang          mongo/cassandra
+    angular     express         oracle 
+    vue         django/flask    sql server
+                java spring     mysql
+                                sqlite
+                                posgress
+
+ 
