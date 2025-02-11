@@ -2,6 +2,7 @@ import FlightList from "./flights/FlightList"
 import FlightCreate from "./flights/FlightCreate"
 import FlightEdit from "./flights/FlightEdit"
 import Counter from "./Counter" 
+import FullName from "./FullName"
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 function App() {//app is a functional component of UI
   return (
@@ -16,7 +17,8 @@ function App() {//app is a functional component of UI
           </Routes>
         </BrowserRouter>
       </div>
-      <Counter/>
+      
+      <FullName/>
     </>
   )
 }
