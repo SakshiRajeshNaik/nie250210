@@ -1,35 +1,41 @@
+import { Link } from "react-router-dom";
 import PageHeader from "../header/PageHeader";
+
 function CoffeeCreate() {
     return (
         <>
-        <PageHeader PageNumber={2}/>
-            <h3><a href="/coffee/list" className="btn btn-light">Go Back</a>Coffee</h3>
+            <PageHeader pageNumber={2} />
+            <h3>
+                <Link to="/coffee/list" className="btn btn-light me-2">Go Back</Link>
+                Create Coffee
+            </h3>
             <div className="container">
-                <div className="form-group mb-3">
-                    <label for="id" className="form-label">Coffee ID</label>
-                    <input type="text" className="form-control" id="number" placeholder="Please enter coffee id" />
-                </div>
-                <div className="form-group mb-3">
-                    <label for="coffee_name" className="form-label">Coffee Name</label>
-                    <input type="text" className="form-control" id="number" placeholder="Please enter coffee name" />
-                </div>
-                <div className="form-group mb-3">
-                    <label for="category" className="form-label">Category</label>
-                    <input type="text" className="form-control" id="number" placeholder="Please enter category" />
-                </div>
-                
-                <div className="form-group mb-3">
-                    <label for="sugar_level" className="form-label">Sugarlevel</label>
-                    <input type="text" className="form-control" id="number" placeholder="Please enter sugar level" />
-                </div>
-                <div className="form-group mb-3">
-                    <label for="price" className="form-label">Ticket Price</label>
-                    <input type="text" className="form-control" id="number" placeholder="Please enter Ticket Price" />
-                    <button className="btn btn-success">Create Flight</button>
-                </div>
+                <form>
+                    <div className="form-group mb-3">
+                        <label htmlFor="coffeeId" className="form-label">Coffee ID</label>
+                        <input type="text" className="form-control" id="coffeeId" placeholder="Please enter coffee ID" />
+                    </div>
+                    <div className="form-group mb-3">
+                        <label htmlFor="coffeeName" className="form-label">Coffee Name</label>
+                        <input type="text" className="form-control" id="coffeeName" placeholder="Please enter coffee name" />
+                    </div>
+                    <div className="form-group mb-3">
+                        <label htmlFor="category" className="form-label">Category</label>
+                        <input type="text" className="form-control" id="category" placeholder="Please enter category" />
+                    </div>
+                    <div className="form-group mb-3">
+                        <label htmlFor="sugarLevel" className="form-label">Sugar Level</label>
+                        <input type="text" className="form-control" id="sugarLevel" placeholder="Please enter sugar level" />
+                    </div>
+                    <div className="form-group mb-3">
+                        <label htmlFor="price" className="form-label">Price</label>
+                        <input type="text" className="form-control" id="price" placeholder="Please enter price" />
+                    </div>
+                    <button type="submit" className="btn btn-success">Create Coffee</button>
+                </form>
             </div>
-            </>
-            );
+        </>
+    );
 }
 
-            export default CoffeeCreate;
+export default CoffeeCreate;

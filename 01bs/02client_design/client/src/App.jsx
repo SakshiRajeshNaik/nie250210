@@ -18,7 +18,7 @@ function App() {//app is a functional component of UI
         </BrowserRouter>
       </div>
       
-      <FullName/>
+      {/* <FullName/> */}
     </>
   )
 }
