@@ -56,7 +56,7 @@ func updateFlight(c *gin.Context){
 	}
 	updatedFlight:=Flight{Id:id, Number:"AI 845", AirlineName: "AirIndia", Source:"Mumbai",
 	Destination:"Abu Dabhi", Capacity:180, Price:15000}
-	c.JSON(http.StatusOK,gin.H{"message":"updated flight Sucessfully.","flight":updatedFlight})
+	c.JSON(http.StatusOK,gin.H{"message":"updated flight price Sucessfully.","flight":updatedFlight})
 }
 func deleteFlight(c *gin.Context){
 	// id := c.Param("id")
@@ -69,7 +69,7 @@ func main(){
 	//router
 	r := gin.Default()
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5175"}, // React frontend URL
+		AllowOrigins:     []string{"http://localhost:5173"}, // React frontend URL
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
